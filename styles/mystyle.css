@@ -1,4 +1,27 @@
 #survey-form{
     display: flex;
     flex-direction: column;
+
+}
+
+body{
+    margin-right: 33%;
+    margin-left: 33%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: Grey;
+}
+
+#header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#submit{
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+#favourite{
+    font-weight: bold;
 }

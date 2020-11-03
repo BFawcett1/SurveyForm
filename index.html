@@ -7,31 +7,39 @@
     <title>Document</title>
 </head>
 <body>
+    <header id="header">
     <h1 id="title">NBA MVP Poll</h1>
     <p id="description">Vote for who you think should win MVP.</p>
+    </header>
     <form id="survey-form">
         <label id="name-label">Name</label>
-        <input id="name">
+        <input id="name" placeholder="name" required>
         <label id="email-label">Email</label>
-        <input id="email">
-        <label id="number-label">Phone Number</label>
-        <input id="number">
-        <label id="dropdown-label">Dropdown</label>
+        <input id="email" placeholder="email" type="email" required>
+        <label id="number-label">Age</label>
+        <input type="number" min="0" max="110" placeholder="age" id="number" required>
+        <label id="dropdown-label">MVP Pick</label>
         <select id="dropdown">
-            <option value="number 1">One</option>
+            <option value="Other">Other</option>
+            <option value="LeBron James">LeBron James</option>
+            <option value="James Harden">James Harden</option>
+            <option value="Luka Doncic">Luka Doncic</option>
+            <option value="Giannis Antetokounmpo">Giannis Antetokounmpo</option>
         </select>
-        <label for=""></label>
-        <input type="radio">
-        <label for=""></label>
-        <input type="radio">
-        <label for=""></label>
-        <input type="radio">
-        <label for=""></label>
-        <input type="radio">
-        <label for=""></label>
-        <input type="radio">
-        <textarea id="" rows="4" cols="50"></textarea>
-        <button></button>
+        <p id="favourite">What is your favourite team?</p>
+        <label for="team">Houston Rockets</label>
+        <input type="radio" name="team" value="Rockets">
+        <label for="team">Los Angeles Lakers</label>
+        <input type="radio" name="team" value="Lakers">
+        <label for="team">Miami Heat</label>
+        <input type="radio" name="team" value="Heat">
+        <label for="team">Milwaukee Bucks</label>
+        <input type="radio" name="team" value="Bucks"> 
+        <label for="team">Other</label>
+        <input type="radio" name="team" value="Other">
+        <label id="text-label">Additional Comments</label>
+        <textarea id="comments" rows="4" cols="50"></textarea>
+        <button id="submit">Submit</button>
     </form>
 </body>
 </html>
